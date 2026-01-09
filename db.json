@@ -1,0 +1,921 @@
+{
+  "admin": [
+    {
+      "id": "1",
+      "name": "Sabeer Admin",
+      "email": "admin@gmail.com",
+      "password": "admin123",
+      "role": "admin"
+    }
+  ],
+  "users": [
+    {
+      "id": "9",
+      "name": "elvan",
+      "email": "elvan@gmail.com",
+      "password": "el1234",
+      "cart": [],
+      "wishlist": [
+        {
+          "id": "2",
+          "name": "Executive Grey Straight Fit Formal Pants",
+          "category": "Formal Pants",
+          "price": 1899,
+          "rating": 4,
+          "img": "https://i.pinimg.com/1200x/9c/a4/97/9ca4970ff828ef0dcffc10c0007d4a8b.jpg",
+          "images": [
+            "https://i.pinimg.com/1200x/03/2a/ab/032aabd891077abcb071c1a843e9fd56.jpg"
+          ],
+          "des": "Designed with a clean straight-leg silhouette, these pants offer a perfect balance of structure and comfort. Crafted from premium-quality fabric, they ensure durability, breathability, and all-day ease—ideal for office wear and formal occasions."
+        },
+        {
+          "id": "4",
+          "name": "Premium Cap",
+          "category": "Caps",
+          "price": 1199,
+          "rating": 4,
+          "img": "https://i.pinimg.com/736x/45/79/a7/4579a7f64ebc41dc5dda7e3cf1c2d94e.jpg",
+          "images": [
+            "https://i.pinimg.com/1200x/47/fe/98/47fe98abb687bbaef2449694aa97a658.jpg"
+          ],
+          "des": "Lightweight and comfortable, it features an adjustable strap for a perfect fit and a sleek design that complements casual, sporty, or streetwear looks. Effortlessly stylish, this cap is perfect for sunny days, weekend outings, or just elevating your everyday look."
+        }
+      ],
+      "orders": [
+        {
+          "id": 1767883552686,
+          "items": [
+            {
+              "id": "10",
+              "name": "Midnight Grid Shirt",
+              "category": "Shirts",
+              "price": 1499,
+              "rating": 4,
+              "img": "https://i.pinimg.com/736x/10/4a/e8/104ae85fcb11a1b4cb32184b99dfa8b9.jpg",
+              "images": [
+                "https://i.pinimg.com/736x/78/b8/fc/78b8fc5155ef2f2062be1c306b6174a6.jpg",
+                "https://i.pinimg.com/736x/af/a6/d8/afa6d8bbf35e15908408c4a2eea27b4d.jpg",
+                "https://i.pinimg.com/736x/dd/e8/ca/dde8cac822afe7d107225fdbdd08877e.jpg"
+              ],
+              "des": "This black checkered shirt features a relaxed yet structured fit, perfect for layering or wearing solo. Designed for comfort and versatility, it pairs effortlessly with jeans or chinos for a sleek, modern look. Ideal for casual outings or evening meets, it’s the perfect balance of style and ease.",
+              "size": "M",
+              "quantity": 1,
+              "buyNow": true
+            }
+          ],
+          "status": "Ordered",
+          "paymentMethod": "COD",
+          "paymentDetails": {
+            "name": "anu",
+            "phone": "9876453214",
+            "city": "perithalmana",
+            "pincode": "679321"
+          },
+          "createdAt": "2026-01-08T14:45:52.686Z"
+        },
+        {
+          "id": 1767937659379,
+          "items": [
+            {
+              "id": "6",
+              "name": "Midnight NYC Hoodie",
+              "category": "Hoodies",
+              "price": 1599,
+              "rating": 4,
+              "img": "https://i.pinimg.com/736x/04/68/46/046846ca752d27ce7f137cd0bc450830.jpg",
+              "images": [
+                "https://i.pinimg.com/736x/7e/fe/61/7efe61dc7249bbd7c55d94b174caecfa.jpg",
+                "https://i.pinimg.com/736x/60/25/76/602576700a2cc7c1f2801260896ecf72.jpg"
+              ],
+              "des": "rafted in a deep dark blue shade, this hoodie combines comfort with street-style edge. Perfect for city strolls, casual outings, or layering on chilly days, it features a relaxed fit and premium fabric for all-day wear. Make a bold, effortless statement with this iconic NYC-inspired piece.",
+              "size": "XL",
+              "quantity": 1,
+              "buyNow": true
+            }
+          ],
+          "status": "Ordered",
+          "paymentMethod": "COD",
+          "paymentDetails": {
+            "name": "mohammed sabeer",
+            "phone": "9876453214",
+            "city": "perithalmana",
+            "pincode": "679321"
+          },
+          "createdAt": "2026-01-09T05:47:39.380Z"
+        },
+        {
+          "id": 1767937689812,
+          "items": [
+            {
+              "id": "8",
+              "name": "Elite Street Shirt",
+              "category": "Shirts",
+              "price": 1689,
+              "rating": 4,
+              "img": "https://i.pinimg.com/736x/47/af/2e/47af2e271b2c026726183f17c892d0e1.jpg",
+              "images": [
+                "https://i.pinimg.com/736x/62/eb/3e/62eb3eedb926b1c77f3869c794059928.jpg",
+                "https://i.pinimg.com/736x/35/d6/9e/35d69e446b0079e64b0f4336dc425ff2.jpg"
+              ],
+              "des": "Designed with a contemporary style and premium fabric, this shirt exudes confidence and urban flair. Perfect for casual outings, parties, or streetwear looks, it combines comfort with a standout design that captures a modern, stylish vibe. Ideal for those who want to showcase personality and effortless style.",
+              "size": "L",
+              "quantity": 1,
+              "buyNow": true
+            }
+          ],
+          "status": "Shipped",
+          "paymentMethod": "COD",
+          "paymentDetails": {
+            "name": "mohammed sabeer",
+            "phone": "9876453214",
+            "city": "perithalmana",
+            "pincode": "679321"
+          },
+          "createdAt": "2026-01-09T05:48:09.812Z"
+        },
+        {
+          "id": 1767938263063,
+          "items": [
+            {
+              "id": "7",
+              "name": "Forest Trail Loose-Fit Cargo",
+              "category": "Cargo",
+              "price": 1199,
+              "rating": 4,
+              "img": "https://i.pinimg.com/1200x/61/0d/2c/610d2c14c7ed07a8d6745be45746cae0.jpg",
+              "images": [
+                "https://i.pinimg.com/1200x/87/b7/12/87b71274692472b6f521b705512e87f2.jpg",
+                "https://i.pinimg.com/1200x/d6/c8/a8/d6c8a86f7f0063e78c65e0853f554002.jpg"
+              ],
+              "des": "Designed in a deep dark green shade, these cargos feature a relaxed, loose fit for maximum mobility and multiple pockets for practical storage. Perfect for casual outings, outdoor adventures, or streetwear looks, they combine durability with modern style for an effortlessly versatile wardrobe essential.",
+              "size": "L",
+              "quantity": 1,
+              "buyNow": true
+            }
+          ],
+          "status": "Ordered",
+          "paymentMethod": "COD",
+          "paymentDetails": {
+            "name": "mohammed sabeer",
+            "phone": "9876453214",
+            "city": "perithalmana",
+            "pincode": "679321"
+          },
+          "createdAt": "2026-01-09T05:57:43.063Z"
+        }
+      ],
+      "role": "user",
+      "isBlocked": false,
+      "createdAt": "2026-01-08T14:04:51.180Z"
+    },
+    {
+      "id": "10",
+      "name": "nas",
+      "email": "nas@gmail.com",
+      "password": "nas123",
+      "cart": [
+        {
+          "id": "32",
+          "name": "New York Denim Blue Cap",
+          "category": "Caps",
+          "price": 799,
+          "rating": 4,
+          "img": "https://i.pinimg.com/1200x/43/76/b5/4376b520bdea7b3fc686257c6251cd9b.jpg",
+          "images": [
+            "https://i.pinimg.com/1200x/a2/61/8d/a2618d9dd4610397a5278e195e4d75d5.jpg"
+          ],
+          "des": "Crafted from premium denim (jean-type) fabric, this cap offers durability, comfort, and a timeless urban look. The iconic New York logo adds a bold statement, making it a perfect accessory for casual wear, travel, and everyday styling.",
+          "size": "S",
+          "quantity": 1
+        }
+      ],
+      "wishlist": [
+        {
+          "id": "7",
+          "name": "Forest Trail Loose-Fit Cargo",
+          "category": "Cargo",
+          "price": 1199,
+          "rating": 4,
+          "img": "https://i.pinimg.com/1200x/61/0d/2c/610d2c14c7ed07a8d6745be45746cae0.jpg",
+          "images": [
+            "https://i.pinimg.com/1200x/87/b7/12/87b71274692472b6f521b705512e87f2.jpg",
+            "https://i.pinimg.com/1200x/d6/c8/a8/d6c8a86f7f0063e78c65e0853f554002.jpg"
+          ],
+          "des": "Designed in a deep dark green shade, these cargos feature a relaxed, loose fit for maximum mobility and multiple pockets for practical storage. Perfect for casual outings, outdoor adventures, or streetwear looks, they combine durability with modern style for an effortlessly versatile wardrobe essential."
+        },
+        {
+          "id": "8",
+          "name": "Elite Street Shirt",
+          "category": "Shirts",
+          "price": 1689,
+          "rating": 4,
+          "img": "https://i.pinimg.com/736x/47/af/2e/47af2e271b2c026726183f17c892d0e1.jpg",
+          "images": [
+            "https://i.pinimg.com/736x/62/eb/3e/62eb3eedb926b1c77f3869c794059928.jpg",
+            "https://i.pinimg.com/736x/35/d6/9e/35d69e446b0079e64b0f4336dc425ff2.jpg"
+          ],
+          "des": "Designed with a contemporary style and premium fabric, this shirt exudes confidence and urban flair. Perfect for casual outings, parties, or streetwear looks, it combines comfort with a standout design that captures a modern, stylish vibe. Ideal for those who want to showcase personality and effortless style."
+        }
+      ],
+      "orders": [
+        {
+          "id": 1767883618128,
+          "items": [
+            {
+              "id": "8",
+              "name": "Elite Street Shirt",
+              "category": "Shirts",
+              "price": 1689,
+              "rating": 4,
+              "img": "https://i.pinimg.com/736x/47/af/2e/47af2e271b2c026726183f17c892d0e1.jpg",
+              "images": [
+                "https://i.pinimg.com/736x/62/eb/3e/62eb3eedb926b1c77f3869c794059928.jpg",
+                "https://i.pinimg.com/736x/35/d6/9e/35d69e446b0079e64b0f4336dc425ff2.jpg"
+              ],
+              "des": "Designed with a contemporary style and premium fabric, this shirt exudes confidence and urban flair. Perfect for casual outings, parties, or streetwear looks, it combines comfort with a standout design that captures a modern, stylish vibe. Ideal for those who want to showcase personality and effortless style.",
+              "size": "L",
+              "quantity": 3,
+              "buyNow": true
+            }
+          ],
+          "status": "Packed",
+          "paymentMethod": "COD",
+          "paymentDetails": {
+            "name": "mohammed sabeer",
+            "phone": "9876453214",
+            "city": "perithalmana",
+            "pincode": "679321"
+          },
+          "createdAt": "2026-01-08T14:46:58.128Z"
+        },
+        {
+          "id": 1767931997376,
+          "items": [
+            {
+              "id": "6",
+              "name": "Midnight NYC Hoodie",
+              "category": "Hoodies",
+              "price": 1599,
+              "rating": 4,
+              "img": "https://i.pinimg.com/736x/04/68/46/046846ca752d27ce7f137cd0bc450830.jpg",
+              "images": [
+                "https://i.pinimg.com/736x/7e/fe/61/7efe61dc7249bbd7c55d94b174caecfa.jpg",
+                "https://i.pinimg.com/736x/60/25/76/602576700a2cc7c1f2801260896ecf72.jpg"
+              ],
+              "des": "rafted in a deep dark blue shade, this hoodie combines comfort with street-style edge. Perfect for city strolls, casual outings, or layering on chilly days, it features a relaxed fit and premium fabric for all-day wear. Make a bold, effortless statement with this iconic NYC-inspired piece.",
+              "size": "M",
+              "quantity": 1,
+              "buyNow": true
+            }
+          ],
+          "status": "Ordered",
+          "paymentMethod": "COD",
+          "paymentDetails": {
+            "name": "mohammed sabeer",
+            "phone": "9876453214",
+            "city": "perithalmana",
+            "pincode": "679321"
+          },
+          "createdAt": "2026-01-09T04:13:17.376Z"
+        },
+        {
+          "id": 1767938431665,
+          "items": [
+            {
+              "id": "8",
+              "name": "Elite Street Shirt",
+              "category": "Shirts",
+              "price": 1689,
+              "rating": 4,
+              "img": "https://i.pinimg.com/736x/47/af/2e/47af2e271b2c026726183f17c892d0e1.jpg",
+              "images": [
+                "https://i.pinimg.com/736x/62/eb/3e/62eb3eedb926b1c77f3869c794059928.jpg",
+                "https://i.pinimg.com/736x/35/d6/9e/35d69e446b0079e64b0f4336dc425ff2.jpg"
+              ],
+              "des": "Designed with a contemporary style and premium fabric, this shirt exudes confidence and urban flair. Perfect for casual outings, parties, or streetwear looks, it combines comfort with a standout design that captures a modern, stylish vibe. Ideal for those who want to showcase personality and effortless style.",
+              "size": "XL",
+              "quantity": 1,
+              "buyNow": true
+            }
+          ],
+          "status": "Ordered",
+          "paymentMethod": "COD",
+          "paymentDetails": {
+            "name": "mohammed sabeer",
+            "phone": "9876453214",
+            "city": "perithalmana",
+            "pincode": "679321"
+          },
+          "createdAt": "2026-01-09T06:00:31.665Z"
+        },
+        {
+          "id": 1767938862500,
+          "items": [
+            {
+              "id": "4",
+              "name": "Premium Cap",
+              "category": "Caps",
+              "price": 1199,
+              "rating": 4,
+              "img": "https://i.pinimg.com/736x/45/79/a7/4579a7f64ebc41dc5dda7e3cf1c2d94e.jpg",
+              "images": [
+                "https://i.pinimg.com/1200x/47/fe/98/47fe98abb687bbaef2449694aa97a658.jpg"
+              ],
+              "des": "Lightweight and comfortable, it features an adjustable strap for a perfect fit and a sleek design that complements casual, sporty, or streetwear looks. Effortlessly stylish, this cap is perfect for sunny days, weekend outings, or just elevating your everyday look.",
+              "size": "XL",
+              "quantity": 2,
+              "buyNow": true
+            }
+          ],
+          "status": "Ordered",
+          "paymentMethod": "COD",
+          "paymentDetails": {
+            "name": "mohammed sabeer",
+            "phone": "9876453214",
+            "city": "perithalmana",
+            "pincode": "679321"
+          },
+          "createdAt": "2026-01-09T06:07:42.500Z"
+        },
+        {
+          "id": 1767939281786,
+          "items": [
+            {
+              "id": "28",
+              "name": "Straight Fit Jeans",
+              "category": "Jeans",
+              "price": 1300,
+              "rating": 4,
+              "img": "https://i.pinimg.com/1200x/2f/05/d9/2f05d919b9de045f9e34219d83a06444.jpg",
+              "images": [
+                "https://i.pinimg.com/736x/13/99/ae/1399ae553ff7cc92b6db4c817d86ae45.jpg"
+              ],
+              "des": "designed for everyday comfort and effortless style. Featuring a straight cut from hip to ankle, these jeans offer a clean and balanced fit that never goes out of fashion. Made from durable, high-quality denim, they provide long-lasting wear while maintaining a sharp look.t",
+              "size": "L",
+              "quantity": 2,
+              "buyNow": true
+            }
+          ],
+          "status": "Shipped",
+          "paymentMethod": "COD",
+          "paymentDetails": {
+            "name": "mohammed sabeer",
+            "phone": "9876453214",
+            "city": "perithalmana",
+            "pincode": "679321"
+          },
+          "createdAt": "2026-01-09T06:14:41.786Z"
+        },
+        {
+          "id": 1767946879364,
+          "items": [
+            {
+              "id": "14",
+              "name": "Black jeans",
+              "category": "Jeans",
+              "price": 1399,
+              "rating": 4,
+              "img": "https://i.pinimg.com/1200x/91/b2/03/91b20325c7f726b154d8fe7cc34402bf.jpg",
+              "images": [
+                "https://i.pinimg.com/1200x/35/0d/2b/350d2bffd4ad5b73cc1455d7b1656fa7.jpg"
+              ],
+              "des": "Elevate your casual wardrobe with these modern straight-fit black jeans featuring a subtle white wash for a stylish, worn-in effect. Crafted from soft, durable denim, they offer a comfortable fit that’s neither too tight nor too loose, perfect for everyday wear. The faded accents add a contemporary edge, making them ideal for pairing with t-shirts, casual shirts, or jackets. A versatile staple for a modern, effortless look.",
+              "size": "S",
+              "quantity": 3,
+              "buyNow": true
+            }
+          ],
+          "status": "Delivered",
+          "paymentMethod": "COD",
+          "paymentDetails": {
+            "name": "mohammed sabeer",
+            "phone": "9876453214",
+            "city": "perithalmana",
+            "pincode": "679321"
+          },
+          "createdAt": "2026-01-09T08:21:19.364Z"
+        }
+      ],
+      "role": "user",
+      "isBlocked": true,
+      "createdAt": "2026-01-08T14:42:32.223Z"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Men’s polo shirt",
+      "category": "Formal shirt",
+      "price": 1299,
+      "rating": 5,
+      "img": "https://i.pinimg.com/1200x/c9/c4/36/c9c43605e38a7f17047c2f51157fa737.jpg",
+      "images": [
+        "https://i.pinimg.com/1200x/c9/c4/36/c9c43605e38a7f17047c2f51157fa737.jpg",
+        "https://i.pinimg.com/736x/bb/55/07/bb550760ba0e5384b29725269bc09679.jpg",
+        "https://i.pinimg.com/736x/58/47/8b/58478bb1eaf78e522d174dbbab5096f1.jpg",
+        "https://i.pinimg.com/736x/0f/d6/fa/0fd6faebf99ec90c55ed912865376e85.jpg"
+      ],
+      "des": "style with this Men’s Casual Polo Shirt in Blue & White, designed for comfort, versatility, and timeless appeal. Perfect for casual outings, office casual wear, or weekend get-togethers, this polo shirt blends classic design with modern comfort.",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ]
+    },
+    {
+      "id": "10",
+      "name": "Midnight Grid Shirt",
+      "category": "Shirts",
+      "price": 1499,
+      "rating": 4,
+      "img": "https://i.pinimg.com/736x/10/4a/e8/104ae85fcb11a1b4cb32184b99dfa8b9.jpg",
+      "images": [
+        "https://i.pinimg.com/736x/78/b8/fc/78b8fc5155ef2f2062be1c306b6174a6.jpg",
+        "https://i.pinimg.com/736x/af/a6/d8/afa6d8bbf35e15908408c4a2eea27b4d.jpg",
+        "https://i.pinimg.com/736x/dd/e8/ca/dde8cac822afe7d107225fdbdd08877e.jpg"
+      ],
+      "des": "This black checkered shirt features a relaxed yet structured fit, perfect for layering or wearing solo. Designed for comfort and versatility, it pairs effortlessly with jeans or chinos for a sleek, modern look. Ideal for casual outings or evening meets, it’s the perfect balance of style and ease."
+    },
+    {
+      "id": "15",
+      "name": "Urban Plaid Layered Cotton Shirt",
+      "category": "Shirts",
+      "price": 1100,
+      "rating": 4,
+      "img": "https://i.pinimg.com/736x/86/fe/ea/86feea64012c8076e7a85786b0986cfc.jpg",
+      "images": [
+        "https://i.pinimg.com/736x/b5/d3/4b/b5d34b277bbc8455dab04084e6563118.jpg",
+        "https://i.pinimg.com/736x/f1/4e/2c/f14e2c12ceeb24f8aef58953a70623ef.jpg",
+        "https://i.pinimg.com/1200x/75/fc/2b/75fc2bfd447074a1b764575e1fa6d20a.jpg"
+      ],
+      "des": "Designed with a relaxed fit and classic plaid pattern, this shirt delivers a perfect balance of comfort and attitude. The lightweight cotton fabric keeps you cool all day, while the layered styling adds a bold, modern edge to your casual wardrobe."
+    },
+    {
+      "id": "21",
+      "name": "Light-Blue Full Sleeve T-Shirt",
+      "category": "Tees",
+      "price": 999,
+      "rating": 5,
+      "img": "https://i.pinimg.com/736x/d1/23/be/d123be235a56f7863ac87fe1c2fe735d.jpg",
+      "images": [
+        "https://i.pinimg.com/736x/a6/6a/52/a66a520a6d22f295b0d112c08e496f0b.jpg",
+        "https://i.pinimg.com/736x/25/7b/63/257b63661b65aa578f37ed789ffbe40f.jpg",
+        "https://i.pinimg.com/1200x/87/9b/9d/879b9d5ee3fc52c82dd9b39c6bdfb5be.jpg"
+      ],
+      "des": "crafted from premium-quality cotton fabric that feels gentle on the skin. Designed for all-day comfort, this full sleeve t-shirt offers a relaxed fit and a clean, minimal look that suits both casual and semi-casual outfits."
+    },
+    {
+      "id": "23",
+      "name": "Loose Fit Cargo Pants",
+      "category": "Cargo",
+      "price": 1259,
+      "rating": 4,
+      "img": "https://i.pinimg.com/736x/8d/d2/3c/8dd23c49d2a3d95a725ee57932faaab8.jpg",
+      "images": [
+        "https://i.pinimg.com/1200x/16/8a/f9/168af9a880c172706ad0686164d70aca.jpg",
+        "https://i.pinimg.com/736x/06/cf/af/06cfafed532a7c2d711648734d9b46d2.jpg"
+      ],
+      "des": "designed for comfort and versatility. Made from durable, breathable fabric, these cargos feature a relaxed fit that allows easy movement while maintaining a bold streetwear look. The classic black color adds a sleek touch, making them perfect for casual wear, travel, and everyday outings."
+    },
+    {
+      "id": "28",
+      "name": "Straight Fit Jeans",
+      "category": "Jeans",
+      "price": 1300,
+      "rating": 4,
+      "img": "https://i.pinimg.com/1200x/2f/05/d9/2f05d919b9de045f9e34219d83a06444.jpg",
+      "images": [
+        "https://i.pinimg.com/736x/13/99/ae/1399ae553ff7cc92b6db4c817d86ae45.jpg"
+      ],
+      "des": "designed for everyday comfort and effortless style. Featuring a straight cut from hip to ankle, these jeans offer a clean and balanced fit that never goes out of fashion. Made from durable, high-quality denim, they provide long-lasting wear while maintaining a sharp look.t"
+    },
+    {
+      "id": "32",
+      "name": "New York Denim Blue Cap",
+      "category": "Caps",
+      "price": 799,
+      "rating": 4,
+      "img": "https://i.pinimg.com/1200x/43/76/b5/4376b520bdea7b3fc686257c6251cd9b.jpg",
+      "images": [
+        "https://i.pinimg.com/1200x/a2/61/8d/a2618d9dd4610397a5278e195e4d75d5.jpg"
+      ],
+      "des": "Crafted from premium denim (jean-type) fabric, this cap offers durability, comfort, and a timeless urban look. The iconic New York logo adds a bold statement, making it a perfect accessory for casual wear, travel, and everyday styling."
+    },
+    {
+      "id": "35",
+      "name": "White Premium Comfort Shorts",
+      "category": "Shorts",
+      "price": 999,
+      "rating": 4,
+      "img": "https://i.pinimg.com/736x/5f/af/47/5faf479fc14e2b61fd7cb5aa5361c76f.jpg",
+      "images": [
+        "https://i.pinimg.com/736x/02/23/b3/0223b3e35657a61e104635d19f828d73.jpg",
+        "https://i.pinimg.com/736x/2e/7e/06/2e7e0677be20d1aacbb8aa9d4ea07db5.jpg"
+      ],
+      "des": "crafted from high-quality fabric for a soft and breathable feel. Designed with a clean, minimal look and a relaxed fit, these shorts are perfect for casual wear, home lounging, travel, or summer outings."
+    },
+    {
+      "id": "27",
+      "name": "Classic Brown Straight Fit Formal Pant",
+      "category": "Formal Pants",
+      "price": 1399,
+      "rating": 4,
+      "img": "https://i.pinimg.com/1200x/db/35/f9/db35f975e1b72573e806fa73c0b514f5.jpg",
+      "images": [
+        "https://i.pinimg.com/736x/bb/88/36/bb883685b732d73cbc8090c1c482a333.jpg"
+      ],
+      "des": "Tailored with a clean straight-cut silhouette, this pant delivers a sharp and professional look while ensuring all-day comfort. Crafted from premium-quality fabric, it offers durability, breathability, and a refined finish ideal for office wear and formal occasions."
+    },
+    {
+      "id": "2",
+      "name": "Executive Grey Straight Fit Formal Pants",
+      "category": "Formal Pants",
+      "price": 1899,
+      "rating": 4,
+      "img": "https://i.pinimg.com/1200x/9c/a4/97/9ca4970ff828ef0dcffc10c0007d4a8b.jpg",
+      "images": [
+        "https://i.pinimg.com/1200x/03/2a/ab/032aabd891077abcb071c1a843e9fd56.jpg"
+      ],
+      "des": "Designed with a clean straight-leg silhouette, these pants offer a perfect balance of structure and comfort. Crafted from premium-quality fabric, they ensure durability, breathability, and all-day ease—ideal for office wear and formal occasions."
+    },
+    {
+      "id": "11",
+      "name": "Modern Relaxed Fit Formal Pants",
+      "category": "Formal Pants",
+      "price": 1500,
+      "rating": 4,
+      "img": "https://i.pinimg.com/736x/c6/36/1a/c6361a0d4e2b76c1cc5eae378a8c52db.jpg",
+      "images": [
+        "https://i.pinimg.com/736x/d3/5f/d3/d35fd353b7e6adbdf74788f503fd26a5.jpg",
+        "https://i.pinimg.com/1200x/49/64/43/496443a81d813221d9cfe1f6697c4d2c.jpg"
+      ],
+      "des": "designed for a contemporary yet professional look. The loose fit ensures all-day comfort, while the clean tailoring keeps your outfit polished and elegant."
+    },
+    {
+      "id": "12",
+      "name": "Street Ready Casual Combo",
+      "category": "Combo",
+      "price": 6999,
+      "rating": 4,
+      "img": "https://i.pinimg.com/736x/fb/a0/a5/fba0a561f6593ae7ef24ea7a346870ff.jpg",
+      "images": [
+        "https://i.pinimg.com/736x/f2/a3/6a/f2a36af7097523dbd48ff360c3493608.jpg"
+      ],
+      "des": "This carefully styled set brings together a relaxed-fit pant, a soft cotton sweatshirt, and a versatile casual look perfect for daily wear. Designed for comfort and modern street style, this combo is ideal for outings, travel, and laid-back weekends."
+    },
+    {
+      "id": "13",
+      "name": "Oversized Tees",
+      "category": "Tees",
+      "price": 1200,
+      "rating": 4,
+      "img": "https://i.pinimg.com/736x/a6/fe/eb/a6feeb72665063f5a875967287cc1c4a.jpg",
+      "images": [
+        "https://i.pinimg.com/736x/a3/f8/d5/a3f8d5435326199b5729c20ca7eebba4.jpg",
+        "https://i.pinimg.com/736x/56/9a/30/569a30ed0c394cb000fe5d792044f34b.jpg"
+      ],
+      "des": "Made from soft, breathable cotton, it’s perfect for casual outings, lounging at home, or layering for a street-style look. The loose, relaxed fit ensures freedom of movement, while the clean white color makes it a versatile wardrobe staple. Pair it with jeans, shorts, or joggers for an easy, modern look."
+    },
+    {
+      "id": "14",
+      "name": "Black jeans",
+      "category": "Jeans",
+      "price": 1399,
+      "rating": 4,
+      "img": "https://i.pinimg.com/1200x/91/b2/03/91b20325c7f726b154d8fe7cc34402bf.jpg",
+      "images": [
+        "https://i.pinimg.com/1200x/35/0d/2b/350d2bffd4ad5b73cc1455d7b1656fa7.jpg"
+      ],
+      "des": "Elevate your casual wardrobe with these modern straight-fit black jeans featuring a subtle white wash for a stylish, worn-in effect. Crafted from soft, durable denim, they offer a comfortable fit that’s neither too tight nor too loose, perfect for everyday wear. The faded accents add a contemporary edge, making them ideal for pairing with t-shirts, casual shirts, or jackets. A versatile staple for a modern, effortless look."
+    },
+    {
+      "id": "3",
+      "name": "Street Smart Casual Pack",
+      "category": "Combo",
+      "price": 9999,
+      "rating": 4,
+      "img": "https://i.pinimg.com/1200x/9c/ba/26/9cba2630972690deeec5ac0284219103.jpg",
+      "des": "Make a statement without trying too hard. This street-style casual combo blends a printed t-shirt, straight cargo pants, neutral accessories, and a sporty cap for a modern, laid-back look. Perfect for casual outings or a relaxed city vibe."
+    },
+    {
+      "id": "16",
+      "name": "Warm Brew Office Shirt",
+      "category": "Formal shirt",
+      "price": 1600,
+      "rating": 4,
+      "img": "https://i.pinimg.com/736x/7b/fb/20/7bfb20984b118a41300d7c39eed1c7c5.jpg",
+      "images": [
+        "https://i.pinimg.com/736x/e8/dc/33/e8dc33f29c05ece3aa89426618750103.jpg"
+      ],
+      "des": "This coffee-colored formal shirt blends classic tailoring with modern comfort. The soft, premium fabric ensures all-day wearability, while the neutral shade adds a warm, elegant touch to your professional wardrobe."
+    },
+    {
+      "id": "17",
+      "name": "DarkBlue Grid shirt",
+      "category": "Shirts",
+      "price": 1299,
+      "rating": 4,
+      "img": "https://i.pinimg.com/1200x/61/4b/83/614b83a409a6f271c23de43e2742eb02.jpg",
+      "images": [
+        "https://i.pinimg.com/1200x/f3/c8/0c/f3c80c1bb31e6db14694e280062dfa0f.jpg",
+        "https://i.pinimg.com/1200x/0b/a4/ea/0ba4ea99a413e1d84182e3a1f9eccc4d.jpg"
+      ],
+      "des": "Elevate your casual wardrobe with this Dark Blue & Black Checked Shirt for men. Crafted for comfort and style, its timeless checked pattern exudes sophistication while keeping it versatile for both casual outings and semi-formal events. Pair it with jeans or chinos for a sharp, effortless look."
+    },
+    {
+      "id": "18",
+      "name": "Crimson Yankee Cap",
+      "category": "Caps",
+      "price": 899,
+      "rating": 4,
+      "img": "https://i.pinimg.com/1200x/b0/d8/b2/b0d8b236ddcba8a1cba383ce27c9e945.jpg",
+      "images": [
+        "https://i.pinimg.com/736x/60/31/1d/60311d762024c781ba995a8505a019c0.jpg",
+        "https://i.pinimg.com/736x/02/22/61/022261a28de941e815f0e90e3dfb04a8.jpg"
+      ],
+      "des": "Step up your street-style game with this bold crimson NY logo cap. Designed for both comfort and style, its adjustable fit makes it perfect for all-day wear. Pair it with casual outfits or sporty looks for an effortlessly cool vibe."
+    },
+    {
+      "id": "19",
+      "name": "Casual Classic Pack",
+      "category": "Combo",
+      "price": 8500,
+      "rating": 4,
+      "img": "https://i.pinimg.com/1200x/36/81/0b/36810b66fbd2009c7fb272da09b2d438.jpg",
+      "des": "Step out in effortless style with this all-in-one casual combo. Featuring a crisp white full-sleeve tee for a clean, versatile look, paired with comfortable cargo pants that offer both style and utility. Complete the outfit with super comfy sandals and a trendy cap to stay ready for any adventure. Perfect for weekend outings, casual meet-ups, or city strolls – this combo keeps you looking fresh and feeling relaxed all day."
+    },
+    {
+      "id": "20",
+      "name": "Nike Full Sleeve Tees",
+      "category": "Tees",
+      "price": 1000,
+      "rating": 4,
+      "img": "https://i.pinimg.com/736x/19/86/0c/19860c956ddf28c018eaa4d797252f9e.jpg",
+      "images": [
+        "https://i.pinimg.com/736x/55/f8/16/55f816646a0d6c67d9820b8176d1c2e1.jpg",
+        "",
+        ""
+      ],
+      "des": "Formal office wear shirt"
+    },
+    {
+      "id": "4",
+      "name": "Premium Cap",
+      "category": "Caps",
+      "price": 1199,
+      "rating": 4,
+      "img": "https://i.pinimg.com/736x/45/79/a7/4579a7f64ebc41dc5dda7e3cf1c2d94e.jpg",
+      "images": [
+        "https://i.pinimg.com/1200x/47/fe/98/47fe98abb687bbaef2449694aa97a658.jpg"
+      ],
+      "des": "Lightweight and comfortable, it features an adjustable strap for a perfect fit and a sleek design that complements casual, sporty, or streetwear looks. Effortlessly stylish, this cap is perfect for sunny days, weekend outings, or just elevating your everyday look."
+    },
+    {
+      "id": "22",
+      "name": "Urban Casual Vibe",
+      "category": "Combo",
+      "price": 11999,
+      "rating": 4,
+      "img": "https://i.pinimg.com/736x/c7/91/f6/c791f641845c4da5f384237983e67eb6.jpg",
+      "des": "Featuring a green checked shirt that adds a touch of classic charm, paired with sleek black pants for a clean, versatile look. Complete the outfit with iconic Converse shoes to bring casual coolness to your stride. Perfect for city strolls, casual meet-ups, or weekend hangouts – this combo balances comfort, style, and a dash of personality."
+    },
+    {
+      "id": "5",
+      "name": "BloomCraft Cream Shorts",
+      "category": "Shorts",
+      "price": 1450,
+      "rating": 4,
+      "img": "https://i.pinimg.com/1200x/5f/f5/fa/5ff5fa8a1b2f7c6affb9952cbd89c35a.jpg",
+      "images": [
+        "https://i.pinimg.com/736x/35/2e/cd/352ecdde95138ad3be25c77eeaf66ee8.jpg"
+      ],
+      "des": "Step into summer with the BloomCraft Cream Shorts, featuring an elegant premium floral thread design that adds a touch of sophistication to casual wear. Crafted from soft, breathable fabric, these cream-colored shorts ensure all-day comfort while keeping your style fresh and vibrant. Perfect for beach outings, casual hangouts, or weekend getaways, they effortlessly blend comfort with eye-catching design."
+    },
+    {
+      "id": "24",
+      "name": "Onyx Stripe Formal Shirt",
+      "category": "Formal shirt",
+      "price": 1299,
+      "rating": 4,
+      "img": "https://i.pinimg.com/1200x/77/6d/67/776d67b2094366cfeb98977c376918a6.jpg",
+      "images": [
+        "https://i.pinimg.com/736x/2a/ba/c7/2abac74a671cb249f75f995c43afecfe.jpg",
+        "https://i.pinimg.com/1200x/e4/0d/da/e40dda82f1958dd16ab5d95e63981fce.jpg"
+      ],
+      "des": "Crafted in deep black with subtle white stripes, this shirt exudes sophistication and modern elegance. Perfect for office wear, business meetings, or formal events, it combines a tailored fit with premium fabric for all-day comfort. A timeless piece that effortlessly blends style and professionalism."
+    },
+    {
+      "id": "25",
+      "name": "Blue Azure Luxe Shorts",
+      "category": "Shorts",
+      "price": 1000,
+      "rating": 4,
+      "img": "https://i.pinimg.com/736x/e9/94/b8/e994b8bf564b05f4ecef23585b2a1acb.jpg",
+      "images": [
+        "https://i.pinimg.com/736x/fc/51/f7/fc51f7a1954b984acb8ab8decfb142c8.jpg",
+        "https://i.pinimg.com/736x/25/3b/b0/253bb01f7d323c9bf357fadce70110a9.jpg"
+      ],
+      "des": "Crafted from premium, breathable fabric, these blue shorts offer comfort without compromising on style. Perfect for casual outings, weekend getaways, or a relaxed day out, their versatile design makes them a must-have addition to your wardrobe. Effortless comfort meets modern style in every step."
+    },
+    {
+      "id": "26",
+      "name": "Cocoa Comfort Hoodie",
+      "category": "Hoodies",
+      "price": 1399,
+      "rating": 4,
+      "img": "https://i.pinimg.com/736x/68/b4/b9/68b4b99981fb23b898414712a3d2b013.jpg",
+      "images": [
+        "https://i.pinimg.com/1200x/af/8f/03/af8f034da8f09c0989410fd717bad66b.jpg",
+        "https://i.pinimg.com/736x/0d/2a/b8/0d2ab8a7a264fcd01d7020439e0b99ab.jpg"
+      ],
+      "des": ". Made from soft, premium fabric, this brown hoodie offers warmth and comfort for casual outings or relaxed days at home. Featuring a modern fit and versatile design, it’s perfect for layering, weekend adventures, or adding a touch of effortless style to your everyday look."
+    },
+    {
+      "id": "9",
+      "name": "Ashford Vintage Jeans",
+      "category": "Jeans",
+      "price": 1199,
+      "rating": 4,
+      "img": "https://i.pinimg.com/736x/67/65/a1/6765a11b7037ee14cd4ccc1acf0b9e4b.jpg",
+      "images": [
+        "https://i.pinimg.com/736x/37/a8/b0/37a8b0cd22401a338e4ce5f2def79313.jpg",
+        "https://i.pinimg.com/736x/ee/68/7c/ee687c515d256c64ae253cb4fe5c379b.jpg",
+        "https://i.pinimg.com/736x/4c/4b/b8/4c4bb86e68fb9975931c20ab172b7e11.jpg"
+      ],
+      "des": "Featuring a neutral, washed tone, these jeans blend retro charm with modern comfort. Designed for a perfect fit and all-day wear, they’re ideal for casual outings, street style looks, or adding a subtle vintage touch to your wardrobe. Timeless, versatile, and effortlessly cool."
+    },
+    {
+      "id": "6",
+      "name": "Midnight NYC Hoodie",
+      "category": "Hoodies",
+      "price": 1599,
+      "rating": 4,
+      "img": "https://i.pinimg.com/736x/04/68/46/046846ca752d27ce7f137cd0bc450830.jpg",
+      "images": [
+        "https://i.pinimg.com/736x/7e/fe/61/7efe61dc7249bbd7c55d94b174caecfa.jpg",
+        "https://i.pinimg.com/736x/60/25/76/602576700a2cc7c1f2801260896ecf72.jpg"
+      ],
+      "des": "rafted in a deep dark blue shade, this hoodie combines comfort with street-style edge. Perfect for city strolls, casual outings, or layering on chilly days, it features a relaxed fit and premium fabric for all-day wear. Make a bold, effortless statement with this iconic NYC-inspired piece."
+    },
+    {
+      "id": "29",
+      "name": "Paris Oversized Tee",
+      "category": "Tees",
+      "price": 899,
+      "rating": 4,
+      "img": "https://i.pinimg.com/1200x/6f/30/e9/6f30e93656c05a7a7899fdbd6a6a2af2.jpg",
+      "images": [
+        "https://i.pinimg.com/736x/e2/72/66/e272668d8990e44afc584a9916074e25.jpg",
+        "https://i.pinimg.com/736x/fa/03/a7/fa03a7584bcf00b1a925e43d9804f0a3.jpg",
+        "https://i.pinimg.com/736x/7d/e4/a4/7de4a4bf016f81c8c487e882da76d5dd.jpg"
+      ],
+      "des": "Designed for a relaxed, comfortable fit, this tee combines casual charm with modern appeal. Its oversized silhouette makes it perfect for layering or wearing solo, while the clean design ensures versatility for any casual outing or weekend hangout. A must-have piece for a laid-back, trendy wardrobe."
+    },
+    {
+      "id": "30",
+      "name": "Straight-Fit Cargo",
+      "category": "Cargo",
+      "price": 999,
+      "rating": 4,
+      "img": "https://i.pinimg.com/736x/cf/60/9b/cf609b4acc3010403891741e9324da86.jpg",
+      "images": [
+        "https://i.pinimg.com/736x/88/39/e7/8839e7142972cda7848767cb58771f2b.jpg"
+      ],
+      "des": "Designed with a clean straight fit and multiple pockets, these cargos offer practical storage without compromising on modern aesthetics. Crafted for comfort and durability, they’re perfect for casual outings, streetwear looks, or adventurous weekend trips. A versatile wardrobe essential that balances utility and style effortlessly."
+    },
+    {
+      "id": "31",
+      "name": "Grey Skyline Hoodie",
+      "category": "Hoodies",
+      "price": 1349,
+      "rating": 4,
+      "img": "https://i.pinimg.com/736x/ce/46/56/ce4656c7b6987245ff9b7266f2eeeda4.jpg",
+      "images": [
+        "https://i.pinimg.com/736x/70/9b/42/709b4289ae2e55b91acc968fc8503cf6.jpg"
+      ],
+      "des": "Crafted in a sleek grey shade, this hoodie combines comfort with street-style edge. Featuring a relaxed fit and premium fabric, it’s perfect for city strolls, casual outings, or layering on cooler days. A versatile, modern piece that effortlessly blends style and comfort."
+    },
+    {
+      "id": "7",
+      "name": "Forest Trail Loose-Fit Cargo",
+      "category": "Cargo",
+      "price": 1199,
+      "rating": 4,
+      "img": "https://i.pinimg.com/1200x/61/0d/2c/610d2c14c7ed07a8d6745be45746cae0.jpg",
+      "images": [
+        "https://i.pinimg.com/1200x/87/b7/12/87b71274692472b6f521b705512e87f2.jpg",
+        "https://i.pinimg.com/1200x/d6/c8/a8/d6c8a86f7f0063e78c65e0853f554002.jpg"
+      ],
+      "des": "Designed in a deep dark green shade, these cargos feature a relaxed, loose fit for maximum mobility and multiple pockets for practical storage. Perfect for casual outings, outdoor adventures, or streetwear looks, they combine durability with modern style for an effortlessly versatile wardrobe essential."
+    },
+    {
+      "id": "33",
+      "name": "Ivory Elegance Formal Pant",
+      "category": "Formal Pants",
+      "price": 1659,
+      "rating": 4,
+      "img": "https://i.pinimg.com/736x/38/12/74/381274528f67f7ef548ba0713c4464bb.jpg",
+      "images": [
+        "https://i.pinimg.com/736x/3b/56/85/3b5685aee7c7bb83717566d593e2ead0.jpg"
+      ],
+      "des": "Crafted from premium fabric in a sophisticated cream/off-white shade, these pants offer a sleek, tailored fit for a refined and polished look. Perfect for office wear, formal events, or stylish occasions, they combine comfort, durability, and timeless elegance in one versatile piece."
+    },
+    {
+      "id": "34",
+      "name": "Denim Drift Shirt",
+      "category": "Shirts",
+      "price": 1350,
+      "rating": 4,
+      "img": "https://i.pinimg.com/1200x/74/db/96/74db962dfa419e0472a14e5188d4af86.jpg",
+      "images": [
+        "https://i.pinimg.com/736x/36/f6/b7/36f6b780b85ca934d83f6777e40c53e1.jpg",
+        "https://i.pinimg.com/1200x/1b/a3/78/1ba3786c81ec29a77be79cde4a835c3f.jpg"
+      ],
+      "des": "Crafted from soft, durable blue denim, this shirt offers a comfortable fit with a timeless, versatile design. Perfect for casual outings, layering over tees, or pairing with chinos and jeans, it’s a wardrobe essential that blends classic denim appeal with modern everyday style."
+    },
+    {
+      "id": "8",
+      "name": "Elite Street Shirt",
+      "category": "Shirts",
+      "price": 1689,
+      "rating": 4,
+      "img": "https://i.pinimg.com/736x/47/af/2e/47af2e271b2c026726183f17c892d0e1.jpg",
+      "images": [
+        "https://i.pinimg.com/736x/62/eb/3e/62eb3eedb926b1c77f3869c794059928.jpg",
+        "https://i.pinimg.com/736x/35/d6/9e/35d69e446b0079e64b0f4336dc425ff2.jpg"
+      ],
+      "des": "Designed with a contemporary style and premium fabric, this shirt exudes confidence and urban flair. Perfect for casual outings, parties, or streetwear looks, it combines comfort with a standout design that captures a modern, stylish vibe. Ideal for those who want to showcase personality and effortless style."
+    },
+    {
+      "id": "36",
+      "name": "Skyline Fade Jeans",
+      "category": "Jeans",
+      "price": 1399,
+      "rating": 4,
+      "img": "https://i.pinimg.com/1200x/38/b1/07/38b10725ead6154a4e8b3f8f8ca2d6f2.jpg",
+      "images": [
+        "https://i.pinimg.com/1200x/38/b1/07/38b10725ead6154a4e8b3f8f8ca2d6f2.jpg",
+        "https://i.pinimg.com/1200x/93/28/b0/9328b0a720b21fa18814753a6413a83b.jpg"
+      ],
+      "des": "Featuring a light blue wash with subtle white shading, these jeans offer a modern, tailored fit—neither too loose nor too slim. Designed for everyday wear, they pair effortlessly with tees, shirts, or hoodies, giving you a clean, versatile look with a touch of contemporary flair.",
+      "sizes": [
+        "M",
+        "L"
+      ]
+    },
+    {
+      "id": null,
+      "name": "cap",
+      "price": "2999",
+      "category": "Caps",
+      "imageUrl": "https://i.pinimg.com/736x/8a/0b/b4/8a0bb40d4f8d904b6335e844bbe0db5a.jpg",
+      "size": "S,M,L,XL",
+      "stock": 0,
+      "img": "https://i.pinimg.com/736x/8a/0b/b4/8a0bb40d4f8d904b6335e844bbe0db5a.jpg",
+      "images": [
+        "https://i.pinimg.com/736x/8a/0b/b4/8a0bb40d4f8d904b6335e844bbe0db5a.jpg"
+      ]
+    },
+    {
+      "id": "37",
+      "name": "Red Lined shirt",
+      "price": 2000,
+      "category": "Shirts",
+      "imageUrl": "https://i.pinimg.com/736x/8a/0b/b4/8a0bb40d4f8d904b6335e844bbe0db5a.jpg",
+      "size": "S,M,L,XL",
+      "stock": 0,
+      "img": "https://i.pinimg.com/736x/4c/d0/81/4cd081591c80deedd29b016cdb84a879.jpg",
+      "images": [
+        "https://i.pinimg.com/736x/4c/d0/81/4cd081591c80deedd29b016cdb84a879.jpg",
+        "https://i.pinimg.com/1200x/bf/83/95/bf839537fb79135bd9515e33a442d842.jpg"
+      ],
+      "des": "Elevate your style with this striking red-lined shirt, designed for both comfort and a sharp look. Crafted from soft, breathable fabric, it features a classic fit that moves with you. The subtle red lining along the collar, cuffs, and placket adds a bold pop of color, making it perfect for casual outings, office wear, or smart-casual events. Pair it with jeans or chinos for a versatile, stylish outfit that stands out.",
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L"
+      ]
+    },
+    {
+      "id": "38",
+      "name": "Urban Moss Casual Set",
+      "price": 13899,
+      "category": "Combo",
+      "imageUrl": "https://i.pinimg.com/736x/8a/0b/b4/8a0bb40d4f8d904b6335e844bbe0db5a.jpg",
+      "size": "S,M,L,XL",
+      "stock": 0,
+      "img": "https://i.pinimg.com/736x/b7/d8/42/b7d8421e0d7a7aa7918aa99d757baf59.jpg",
+      "images": [
+        "https://i.pinimg.com/736x/b7/d8/42/b7d8421e0d7a7aa7918aa99d757baf59.jpg"
+      ],
+      "des": "The Urban Moss Casual Set blends modern minimalism with everyday comfort. Featuring an olive-green zip jacket layered over a crisp white tee, paired with charcoal-black denim jeans and neutral sneakers, this combo delivers a balanced, effortlessly stylish look. Perfect for casual outings, city walks, or relaxed weekends, it offers versatility, comfort, and a refined street-style edge.",
+      "sizes": [
+        "M",
+        "L",
+        "XL"
+      ]
+    }
+  ]
+}
