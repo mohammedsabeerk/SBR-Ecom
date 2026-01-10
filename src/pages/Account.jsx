@@ -11,11 +11,19 @@ function Account() {
   const [oldPassword, setOldPassword] = useState("");
   const [newPassword, setNewPassword] = useState("");
 
-  useEffect(() => {
+ useEffect(() => {
+   
     if (!currentUser) {
       navigate("/login", { replace: true });
     }
+
+   
+    if (currentUser?.role === "admin") {
+      navigate("/login", { replace: true });
+    }
   }, [currentUser, navigate]);
+
+  if (!currentUser || currentUser.role === "admin") return null;
 
   const handlePasswordChange = async () => {
     if (oldPassword !== currentUser.password) {

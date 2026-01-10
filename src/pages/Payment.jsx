@@ -12,7 +12,6 @@ function Payment() {
   const navigate = useNavigate();
   const location = useLocation();
 
-  // Check if this is a Buy Now order
   const buyNowItem = location.state?.buyNowItem;
   const orderItems = buyNowItem ? [{ ...buyNowItem, buyNow: true }] : cart;
 
@@ -25,7 +24,6 @@ function Payment() {
     pincode: "",
   });
 
-  // Redirect if not logged in
   useEffect(() => {
     if (!currentUser) {
       toast.error("Please login to place an order");
@@ -53,7 +51,7 @@ function Payment() {
     }
 
     try {
-      // ✅ Pass isBuyNow: true if this is a Buy Now order
+    
       const success = await placeOrder({
         items: orderItems,
         method,

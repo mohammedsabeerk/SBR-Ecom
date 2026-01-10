@@ -50,10 +50,11 @@ function OrdersAd() {
       const updatedOrders = user.orders.map((order) =>
         order.id === orderId ? { ...order, status: newStatus } : order
       );
+await axios.put(`http://localhost:5000/users/${userId}`, {
+  ...user,
+  orders: updatedOrders,
+});
 
-      await axios.patch(`http://localhost:5000/users/${userId}`, {
-        orders: updatedOrders,
-      });
 
       fetchOrders();
     } catch (error) {

@@ -1,22 +1,30 @@
-import { useEffect } from "react";
+
+import { useEffect, useState } from "react";
 import { useAppContext } from "../context/AppContext";
 import { FaTrash } from "react-icons/fa";
 import { toast } from "react-toastify";
 import { useNavigate } from "react-router-dom";
 
 function Cart() {
-  const {
-    cart,
-    currentUser,
-    removeFromCart,
-    updateCartQuantity,
-    updateCartSize,
-    clearCart,
+  const { 
+    cart, 
+    currentUser, 
+    updateCartSize, 
+    removeFromCart, 
+    updateCartQuantity, 
+    clearCart 
   } = useAppContext();
 
   const navigate = useNavigate();
   const sizes = ["S", "M", "L", "XL"];
 
+  const [selectedSizes, setSelectedSizes] = useState(() => {
+    const initialSizes = {};
+    cart.forEach((item) => {
+      initialSizes[item.id + "-" + (item.size || "")] = item.size || "";
+    });
+    return initialSizes;
+  });
 
   useEffect(() => {
     if (!currentUser) {
@@ -39,7 +47,7 @@ function Cart() {
   }
 
   return (
-    <div className="px-6 md:px-10 py-10 mt-24 ">
+    <div className="px-6 md:px-10 py-10 mt-24">
       <div className="space-y-6">
         {cart.map((item) => (
           <div
@@ -62,11 +70,19 @@ function Cart() {
                   {sizes.map((size) => (
                     <button
                       key={size}
-                      onClick={async () =>
-                        await updateCartSize(item.id, item.size, size)
-                      }
+                      onClick={async () => {
+                        const key = item.id + "-" + (item.size || "");
+                        setSelectedSizes((prev) => ({
+                          ...prev,
+                          [key]: size,
+                        }));
+                        await updateCartSize(item.id, item.size, size);
+                      }}
                       className={`px-3 py-1 border rounded ${
-                        item.size === size ? "bg-black text-white" : "bg-white"
+                        selectedSizes[item.id + "-" + (item.size || "")] ===
+                        size
+                          ? "bg-black text-white"
+                          : "bg-white"
                       }`}
                     >
                       {size}
@@ -136,7 +152,18 @@ function Cart() {
         </button>
 
         <button
-          onClick={() => navigate("/payment")}
+          onClick={() => {
+           
+            const missingSize = cart.find((item) => !item.size);
+            if (missingSize) {
+              toast.error(
+                `Please select a size for "${missingSize.name}" before checkout`
+              );
+              return;
+            }
+
+            navigate("/payment");
+          }}
           className="px-6 py-2 bg-black text-white rounded"
         >
           Checkout

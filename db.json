@@ -10,7 +10,7 @@
   ],
   "users": [
     {
-      "id": "9",
+      "id": "1",
       "name": "elvan",
       "email": "elvan@gmail.com",
       "password": "el1234",
@@ -169,7 +169,7 @@
       "createdAt": "2026-01-08T14:04:51.180Z"
     },
     {
-      "id": "10",
+      "id": "2",
       "name": "nas",
       "email": "nas@gmail.com",
       "password": "nas123",
@@ -298,7 +298,7 @@
               "buyNow": true
             }
           ],
-          "status": "Ordered",
+          "status": "Packed",
           "paymentMethod": "COD",
           "paymentDetails": {
             "name": "mohammed sabeer",
@@ -394,11 +394,439 @@
             "pincode": "679321"
           },
           "createdAt": "2026-01-09T08:21:19.364Z"
+        },
+        {
+          "id": 1768018191914,
+          "items": [
+            {
+              "id": "1",
+              "name": "Men’s polo shirt",
+              "category": "Formal shirt",
+              "price": 1299,
+              "rating": 5,
+              "img": "https://i.pinimg.com/1200x/c9/c4/36/c9c43605e38a7f17047c2f51157fa737.jpg",
+              "images": [
+                "https://i.pinimg.com/1200x/c9/c4/36/c9c43605e38a7f17047c2f51157fa737.jpg",
+                "https://i.pinimg.com/736x/bb/55/07/bb550760ba0e5384b29725269bc09679.jpg",
+                "https://i.pinimg.com/736x/58/47/8b/58478bb1eaf78e522d174dbbab5096f1.jpg",
+                "https://i.pinimg.com/736x/0f/d6/fa/0fd6faebf99ec90c55ed912865376e85.jpg"
+              ],
+              "des": "style with this Men’s Casual Polo Shirt in Blue & White, designed for comfort, versatility, and timeless appeal. Perfect for casual outings, office casual wear, or weekend get-togethers, this polo shirt blends classic design with modern comfort.",
+              "sizes": [
+                "XS",
+                "S",
+                "M",
+                "L"
+              ],
+              "size": "S",
+              "quantity": 1,
+              "buyNow": true
+            }
+          ],
+          "status": "Ordered",
+          "paymentMethod": "COD",
+          "paymentDetails": {
+            "name": "mohammed sabeer",
+            "phone": "9876453214",
+            "city": "perithalmana",
+            "pincode": "679321"
+          },
+          "createdAt": "2026-01-10T04:09:51.914Z"
+        },
+        {
+          "id": 1768020441227,
+          "items": [
+            {
+              "id": "7",
+              "name": "Forest Trail Loose-Fit Cargo",
+              "category": "Cargo",
+              "price": 1199,
+              "rating": 4,
+              "img": "https://i.pinimg.com/1200x/61/0d/2c/610d2c14c7ed07a8d6745be45746cae0.jpg",
+              "images": [
+                "https://i.pinimg.com/1200x/87/b7/12/87b71274692472b6f521b705512e87f2.jpg",
+                "https://i.pinimg.com/1200x/d6/c8/a8/d6c8a86f7f0063e78c65e0853f554002.jpg"
+              ],
+              "des": "Designed in a deep dark green shade, these cargos feature a relaxed, loose fit for maximum mobility and multiple pockets for practical storage. Perfect for casual outings, outdoor adventures, or streetwear looks, they combine durability with modern style for an effortlessly versatile wardrobe essential.",
+              "size": "L",
+              "quantity": 1,
+              "buyNow": true
+            }
+          ],
+          "total": 1199,
+          "status": "Ordered",
+          "paymentMethod": "COD",
+          "paymentDetails": {
+            "name": "mohammed sabeer",
+            "phone": "9876453214",
+            "city": "perithalmana",
+            "pincode": "679321"
+          },
+          "createdAt": "2026-01-10T04:47:21.227Z"
+        },
+        {
+          "id": 1768022306529,
+          "items": [
+            {
+              "id": "35",
+              "name": "White Premium Comfort Shorts",
+              "category": "Shorts",
+              "price": 999,
+              "rating": 4,
+              "img": "https://i.pinimg.com/736x/5f/af/47/5faf479fc14e2b61fd7cb5aa5361c76f.jpg",
+              "images": [
+                "https://i.pinimg.com/736x/02/23/b3/0223b3e35657a61e104635d19f828d73.jpg",
+                "https://i.pinimg.com/736x/2e/7e/06/2e7e0677be20d1aacbb8aa9d4ea07db5.jpg"
+              ],
+              "des": "crafted from high-quality fabric for a soft and breathable feel. Designed with a clean, minimal look and a relaxed fit, these shorts are perfect for casual wear, home lounging, travel, or summer outings.",
+              "size": "M",
+              "quantity": 2,
+              "buyNow": true
+            }
+          ],
+          "status": "Ordered",
+          "paymentMethod": "COD",
+          "paymentDetails": {
+            "name": "mohammed sabeer",
+            "phone": "9876453214",
+            "city": "perithalmana",
+            "pincode": "679321"
+          },
+          "createdAt": "2026-01-10T05:18:26.529Z"
         }
       ],
       "role": "user",
-      "isBlocked": true,
+      "isBlocked": false,
       "createdAt": "2026-01-08T14:42:32.223Z"
+    },
+    {
+      "id": "3",
+      "name": "jaseel",
+      "email": "jaseel@gmail.com",
+      "password": "jaseel123",
+      "cart": [],
+      "wishlist": [],
+      "orders": [
+        {
+          "id": 1768022120296,
+          "items": [
+            {
+              "id": "1",
+              "name": "Men’s polo shirt",
+              "category": "Formal shirt",
+              "price": 1299,
+              "rating": 5,
+              "img": "https://i.pinimg.com/1200x/c9/c4/36/c9c43605e38a7f17047c2f51157fa737.jpg",
+              "images": [
+                "https://i.pinimg.com/1200x/c9/c4/36/c9c43605e38a7f17047c2f51157fa737.jpg",
+                "https://i.pinimg.com/736x/bb/55/07/bb550760ba0e5384b29725269bc09679.jpg",
+                "https://i.pinimg.com/736x/58/47/8b/58478bb1eaf78e522d174dbbab5096f1.jpg",
+                "https://i.pinimg.com/736x/0f/d6/fa/0fd6faebf99ec90c55ed912865376e85.jpg"
+              ],
+              "des": "style with this Men’s Casual Polo Shirt in Blue & White, designed for comfort, versatility, and timeless appeal. Perfect for casual outings, office casual wear, or weekend get-togethers, this polo shirt blends classic design with modern comfort.",
+              "sizes": [
+                "XS",
+                "S",
+                "M",
+                "L"
+              ],
+              "size": "M",
+              "quantity": 1,
+              "buyNow": true
+            }
+          ],
+          "status": "Ordered",
+          "paymentMethod": "COD",
+          "paymentDetails": {
+            "name": "mohammed sabeer",
+            "phone": "9876453214",
+            "city": "perithalmana",
+            "pincode": "679321"
+          },
+          "createdAt": "2026-01-10T05:15:20.296Z"
+        }
+      ],
+      "role": "user",
+      "isBlocked": false,
+      "createdAt": "2026-01-10T05:15:00.114Z"
+    },
+    {
+      "id": "4",
+      "name": "Mishal ",
+      "email": "mishal12@gmail.com",
+      "password": "mishal123",
+      "cart": [
+        {
+          "id": "2",
+          "name": "Executive Grey Straight Fit Formal Pants",
+          "category": "Formal Pants",
+          "price": 1899,
+          "rating": 4,
+          "img": "https://i.pinimg.com/1200x/9c/a4/97/9ca4970ff828ef0dcffc10c0007d4a8b.jpg",
+          "images": [
+            "https://i.pinimg.com/1200x/03/2a/ab/032aabd891077abcb071c1a843e9fd56.jpg"
+          ],
+          "des": "Designed with a clean straight-leg silhouette, these pants offer a perfect balance of structure and comfort. Crafted from premium-quality fabric, they ensure durability, breathability, and all-day ease—ideal for office wear and formal occasions.",
+          "quantity": 1,
+          "size": "M"
+        },
+        {
+          "id": "7",
+          "name": "Forest Trail Loose-Fit Cargo",
+          "category": "Cargo",
+          "price": 1199,
+          "rating": 4,
+          "img": "https://i.pinimg.com/1200x/61/0d/2c/610d2c14c7ed07a8d6745be45746cae0.jpg",
+          "images": [
+            "https://i.pinimg.com/1200x/87/b7/12/87b71274692472b6f521b705512e87f2.jpg",
+            "https://i.pinimg.com/1200x/d6/c8/a8/d6c8a86f7f0063e78c65e0853f554002.jpg"
+          ],
+          "des": "Designed in a deep dark green shade, these cargos feature a relaxed, loose fit for maximum mobility and multiple pockets for practical storage. Perfect for casual outings, outdoor adventures, or streetwear looks, they combine durability with modern style for an effortlessly versatile wardrobe essential.",
+          "quantity": 1,
+          "size": "S"
+        }
+      ],
+      "wishlist": [],
+      "orders": [
+        {
+          "id": 1768023236833,
+          "items": [
+            {
+              "id": "2",
+              "name": "Executive Grey Straight Fit Formal Pants",
+              "category": "Formal Pants",
+              "price": 1899,
+              "rating": 4,
+              "img": "https://i.pinimg.com/1200x/9c/a4/97/9ca4970ff828ef0dcffc10c0007d4a8b.jpg",
+              "images": [
+                "https://i.pinimg.com/1200x/03/2a/ab/032aabd891077abcb071c1a843e9fd56.jpg"
+              ],
+              "des": "Designed with a clean straight-leg silhouette, these pants offer a perfect balance of structure and comfort. Crafted from premium-quality fabric, they ensure durability, breathability, and all-day ease—ideal for office wear and formal occasions.",
+              "size": "L",
+              "quantity": 1,
+              "buyNow": true
+            }
+          ],
+          "status": "Shipped",
+          "paymentMethod": "COD",
+          "paymentDetails": {
+            "name": "mohammed sabeer",
+            "phone": "9876453214",
+            "city": "perithalmana",
+            "pincode": "679321"
+          },
+          "createdAt": "2026-01-10T05:33:56.833Z"
+        },
+        {
+          "id": 1768026879872,
+          "items": [
+            {
+              "id": "15",
+              "name": "Urban Plaid Layered Cotton Shirt",
+              "category": "Shirts",
+              "price": 1100,
+              "rating": 4,
+              "img": "https://i.pinimg.com/736x/86/fe/ea/86feea64012c8076e7a85786b0986cfc.jpg",
+              "images": [
+                "https://i.pinimg.com/736x/b5/d3/4b/b5d34b277bbc8455dab04084e6563118.jpg",
+                "https://i.pinimg.com/736x/f1/4e/2c/f14e2c12ceeb24f8aef58953a70623ef.jpg",
+                "https://i.pinimg.com/1200x/75/fc/2b/75fc2bfd447074a1b764575e1fa6d20a.jpg"
+              ],
+              "des": "Designed with a relaxed fit and classic plaid pattern, this shirt delivers a perfect balance of comfort and attitude. The lightweight cotton fabric keeps you cool all day, while the layered styling adds a bold, modern edge to your casual wardrobe.",
+              "quantity": 1,
+              "size": "S"
+            },
+            {
+              "id": "9",
+              "name": "Ashford Vintage Jeans",
+              "category": "Jeans",
+              "price": 1199,
+              "rating": 4,
+              "img": "https://i.pinimg.com/736x/67/65/a1/6765a11b7037ee14cd4ccc1acf0b9e4b.jpg",
+              "images": [
+                "https://i.pinimg.com/736x/37/a8/b0/37a8b0cd22401a338e4ce5f2def79313.jpg",
+                "https://i.pinimg.com/736x/ee/68/7c/ee687c515d256c64ae253cb4fe5c379b.jpg",
+                "https://i.pinimg.com/736x/4c/4b/b8/4c4bb86e68fb9975931c20ab172b7e11.jpg"
+              ],
+              "des": "Featuring a neutral, washed tone, these jeans blend retro charm with modern comfort. Designed for a perfect fit and all-day wear, they’re ideal for casual outings, street style looks, or adding a subtle vintage touch to your wardrobe. Timeless, versatile, and effortlessly cool.",
+              "quantity": 1,
+              "size": "L"
+            }
+          ],
+          "status": "Ordered",
+          "paymentMethod": "COD",
+          "paymentDetails": {
+            "name": "mohammed sabeer",
+            "phone": "9876453214",
+            "city": "perithalmana",
+            "pincode": "679321"
+          },
+          "createdAt": "2026-01-10T06:34:39.872Z"
+        }
+      ],
+      "role": "user",
+      "isBlocked": false,
+      "createdAt": "2026-01-10T05:20:21.867Z"
+    },
+    {
+      "id": "5",
+      "name": "noobi",
+      "email": "shifin1@gmail.com",
+      "password": "noobi123",
+      "cart": [],
+      "wishlist": [],
+      "orders": [],
+      "role": "user",
+      "isBlocked": false,
+      "createdAt": "2026-01-10T05:27:01.233Z"
+    },
+    {
+      "id": "6",
+      "name": "Saheer",
+      "email": "saheer1@gmail.com",
+      "password": "saheer123",
+      "cart": [],
+      "wishlist": [
+        {
+          "id": "2",
+          "name": "Executive Grey Straight Fit Formal Pants",
+          "category": "Formal Pants",
+          "price": 1899,
+          "rating": 4,
+          "img": "https://i.pinimg.com/1200x/9c/a4/97/9ca4970ff828ef0dcffc10c0007d4a8b.jpg",
+          "images": [
+            "https://i.pinimg.com/1200x/03/2a/ab/032aabd891077abcb071c1a843e9fd56.jpg"
+          ],
+          "des": "Designed with a clean straight-leg silhouette, these pants offer a perfect balance of structure and comfort. Crafted from premium-quality fabric, they ensure durability, breathability, and all-day ease—ideal for office wear and formal occasions."
+        }
+      ],
+      "orders": [
+        {
+          "id": 1768023698350,
+          "items": [
+            {
+              "id": "5",
+              "name": "BloomCraft Cream Shorts",
+              "category": "Shorts",
+              "price": 1450,
+              "rating": 4,
+              "img": "https://i.pinimg.com/1200x/5f/f5/fa/5ff5fa8a1b2f7c6affb9952cbd89c35a.jpg",
+              "images": [
+                "https://i.pinimg.com/736x/35/2e/cd/352ecdde95138ad3be25c77eeaf66ee8.jpg"
+              ],
+              "des": "Step into summer with the BloomCraft Cream Shorts, featuring an elegant premium floral thread design that adds a touch of sophistication to casual wear. Crafted from soft, breathable fabric, these cream-colored shorts ensure all-day comfort while keeping your style fresh and vibrant. Perfect for beach outings, casual hangouts, or weekend getaways, they effortlessly blend comfort with eye-catching design.",
+              "size": "L",
+              "quantity": 1,
+              "buyNow": true
+            }
+          ],
+          "status": "Delivered",
+          "paymentMethod": "COD",
+          "paymentDetails": {
+            "name": "mohammed sabeer",
+            "phone": "9876453214",
+            "city": "perithalmana",
+            "pincode": "679321"
+          },
+          "createdAt": "2026-01-10T05:41:38.350Z"
+        },
+        {
+          "id": 1768027051968,
+          "items": [
+            {
+              "id": "6",
+              "name": "Midnight NYC Hoodie",
+              "category": "Hoodies",
+              "price": 1599,
+              "rating": 4,
+              "img": "https://i.pinimg.com/736x/04/68/46/046846ca752d27ce7f137cd0bc450830.jpg",
+              "images": [
+                "https://i.pinimg.com/736x/7e/fe/61/7efe61dc7249bbd7c55d94b174caecfa.jpg",
+                "https://i.pinimg.com/736x/60/25/76/602576700a2cc7c1f2801260896ecf72.jpg"
+              ],
+              "des": "rafted in a deep dark blue shade, this hoodie combines comfort with street-style edge. Perfect for city strolls, casual outings, or layering on chilly days, it features a relaxed fit and premium fabric for all-day wear. Make a bold, effortless statement with this iconic NYC-inspired piece.",
+              "quantity": 1,
+              "size": "M"
+            }
+          ],
+          "status": "Cancelled",
+          "paymentMethod": "COD",
+          "paymentDetails": {
+            "name": "mohammed sabeer",
+            "phone": "9876453214",
+            "city": "perithalmana",
+            "pincode": "679321"
+          },
+          "createdAt": "2026-01-10T06:37:31.968Z"
+        }
+      ],
+      "role": "user",
+      "isBlocked": false,
+      "createdAt": "2026-01-10T05:32:15.898Z"
+    },
+    {
+      "id": "7",
+      "name": "Anu",
+      "email": "anu12@gmail.com",
+      "password": "anu123",
+      "cart": [],
+      "wishlist": [
+        {
+          "id": "1",
+          "name": "Men’s polo shirt",
+          "category": "Formal shirt",
+          "price": 1299,
+          "rating": 5,
+          "img": "https://i.pinimg.com/1200x/c9/c4/36/c9c43605e38a7f17047c2f51157fa737.jpg",
+          "images": [
+            "https://i.pinimg.com/1200x/c9/c4/36/c9c43605e38a7f17047c2f51157fa737.jpg",
+            "https://i.pinimg.com/736x/bb/55/07/bb550760ba0e5384b29725269bc09679.jpg",
+            "https://i.pinimg.com/736x/58/47/8b/58478bb1eaf78e522d174dbbab5096f1.jpg",
+            "https://i.pinimg.com/736x/0f/d6/fa/0fd6faebf99ec90c55ed912865376e85.jpg"
+          ],
+          "des": "style with this Men’s Casual Polo Shirt in Blue & White, designed for comfort, versatility, and timeless appeal. Perfect for casual outings, office casual wear, or weekend get-togethers, this polo shirt blends classic design with modern comfort.",
+          "sizes": [
+            "XS",
+            "S",
+            "M",
+            "L"
+          ]
+        }
+      ],
+      "orders": [
+        {
+          "id": 1768023777938,
+          "items": [
+            {
+              "id": "16",
+              "name": "Warm Brew Office Shirt",
+              "category": "Formal shirt",
+              "price": 1600,
+              "rating": 4,
+              "img": "https://i.pinimg.com/736x/7b/fb/20/7bfb20984b118a41300d7c39eed1c7c5.jpg",
+              "images": [
+                "https://i.pinimg.com/736x/e8/dc/33/e8dc33f29c05ece3aa89426618750103.jpg"
+              ],
+              "des": "This coffee-colored formal shirt blends classic tailoring with modern comfort. The soft, premium fabric ensures all-day wearability, while the neutral shade adds a warm, elegant touch to your professional wardrobe.",
+              "size": "M",
+              "quantity": 2,
+              "buyNow": true
+            }
+          ],
+          "status": "Cancelled",
+          "paymentMethod": "COD",
+          "paymentDetails": {
+            "name": "mohammed sabeer",
+            "phone": "9876453214",
+            "city": "perithalmana",
+            "pincode": "679321"
+          },
+          "createdAt": "2026-01-10T05:42:57.938Z"
+        }
+      ],
+      "role": "user",
+      "isBlocked": false,
+      "createdAt": "2026-01-10T05:42:08.560Z"
     }
   ],
   "products": [

@@ -1,7 +1,8 @@
-
 import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { AppContext } from "./AppContext";
+import { toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 export const AppContextt = ({ children }) => {
   const navigate = useNavigate();
@@ -118,11 +119,12 @@ export const AppContextt = ({ children }) => {
   };
 
   const updateUserInDB = async (updatedUser) => {
-    await fetch(`http://localhost:5000/users/${updatedUser.id}`, {
+    const res = await fetch(`http://localhost:5000/users/${updatedUser.id}`, {
       method: "PUT",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(updatedUser),
     });
+    if (!res.ok) throw new Error("Failed to update user in DB");
     localStorage.setItem("currentUser", JSON.stringify(updatedUser));
   };
 
@@ -138,67 +140,83 @@ export const AppContextt = ({ children }) => {
     }
   }, [currentUser]);
 
-  const register = async (name, email, password) => {
-    const resUsers = await fetch("http://localhost:5000/users");
-    const users = await resUsers.json();
 
-    const lastId =
-      users.length > 0
-        ? Math.max(...users.map((u) => Number(u.id) || 0))
-        : 0;
+const register = async (name, email, password) => {
+  
+  const resUsers = await fetch("http://localhost:5000/users");
+  const users = await resUsers.json();
 
-    const newUser = {
-      id: lastId + 1,
-      name,
-      email,
-      password,
-      cart: [],
-      wishlist: [],
-      orders: [],
-      role: "user",
-      isBlocked: false,
-      createdAt: new Date().toISOString(),
-    };
+  const lastId =
+    users.length > 0
+      ? Math.max(...users.map((u) => Number(u.id) || 0))
+      : 0;
 
-    const res = await fetch("http://localhost:5000/users", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(newUser),
-    });
-
-    const user = await res.json();
-    setCurrentUser(user);
-    localStorage.setItem("currentUser", JSON.stringify(user));
+  const newUser = {
+    id: String(lastId + 1),
+    name,
+    email,
+    password,
+    cart: [],
+    wishlist: [],
+    orders: [],
+    role: "user",
+    isBlocked: false,
+    createdAt: new Date().toISOString(),
   };
 
-  const login = async (email, password) => {
-    const adminRes = await fetch(
-      `http://localhost:5000/admin?email=${email}&password=${password}`
-    );
-    const adminData = await adminRes.json();
-    if (adminData.length) {
-      const admin = { ...adminData[0], role: "admin" };
-      setCurrentUser(admin);
-      localStorage.setItem("currentUser", JSON.stringify(admin));
-      return "admin";
-    }
+  
+  const res = await fetch("http://localhost:5000/users", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(newUser),
+  });
 
-    const userRes = await fetch(
-      `http://localhost:5000/users?email=${email}&password=${password}`
-    );
-    const users = await userRes.json();
-    if (!users.length) return false;
+  if (!res.ok) throw new Error("Registration failed");
 
-    const user = users[0];
-    if (user.isBlocked) return "blocked";
 
-    setCurrentUser({ ...user, role: "user" });
-    localStorage.setItem(
-      "currentUser",
-      JSON.stringify({ ...user, role: "user" })
-    );
-    return "user";
-  };
+  const savedUserRes = await fetch(
+    `http://localhost:5000/users?id=${newUser.id}`
+  );
+  const savedUserData = await savedUserRes.json();
+  const user = savedUserData[0];
+
+  setCurrentUser({ ...user, role: "user" });
+  localStorage.setItem(
+    "currentUser",
+    JSON.stringify({ ...user, role: "user" })
+  );
+};
+
+
+const login = async (email, password) => {
+  
+  const adminRes = await fetch(
+    `http://localhost:5000/admin?email=${email}&password=${password}`
+  );
+  const adminData = await adminRes.json();
+  if (adminData.length) {
+    const admin = { ...adminData[0], role: "admin" };
+    setCurrentUser(admin);
+    localStorage.setItem("currentUser", JSON.stringify(admin));
+    return "admin";
+  }
+
+  const userRes = await fetch(
+    `http://localhost:5000/users?email=${email}&password=${password}`
+  );
+  const users = await userRes.json();
+  if (!users.length) return false;
+
+  const user = users[0];
+  if (user.isBlocked) return "blocked";
+
+  setCurrentUser({ ...user, role: "user" });
+  localStorage.setItem(
+    "currentUser",
+    JSON.stringify({ ...user, role: "user" })
+  );
+  return "user";
+};
 
   const logout = () => {
     setCurrentUser(null);
@@ -242,14 +260,19 @@ export const AppContextt = ({ children }) => {
     await updateUserInDB(updatedUser);
   };
 
-  const updateCartSize = async (id, size) => {
-    const updatedCart = cart.map((i) => (i.id === id ? { ...i, size } : i));
-    setCart(updatedCart);
+const updateCartSize = async (id, oldSize, newSize) => {
+  const updatedCart = cart.map((i) =>
+    i.id === id && i.size === oldSize ? { ...i, size: newSize } : i
+  );
+  setCart(updatedCart);
 
-    const updatedUser = { ...currentUser, cart: updatedCart };
-    setCurrentUser(updatedUser);
-    await updateUserInDB(updatedUser);
-  };
+  const updatedUser = { ...currentUser, cart: updatedCart };
+  setCurrentUser(updatedUser);
+
+
+  await updateUserInDB(updatedUser);
+};
+
 
   const clearCart = async () => {
     setCart([]);
@@ -272,15 +295,29 @@ export const AppContextt = ({ children }) => {
     return true;
   };
 
-  const moveWishlistToCart = async (product) => {
-    await addToCart(product);
-    const updatedWishlist = wishlist.filter((i) => i.id !== product.id);
-    setWishlist(updatedWishlist);
 
-    const updatedUser = { ...currentUser, wishlist: updatedWishlist };
-    setCurrentUser(updatedUser);
-    await updateUserInDB(updatedUser);
-  };
+
+const moveWishlistToCart = async (product) => {
+  if (!currentUser) return;
+
+
+  const updatedCart = [...cart, { ...product, quantity: 1 }];
+  const updatedWishlist = wishlist.filter((i) => i.id !== product.id);
+
+
+  const updatedUser = { ...currentUser, cart: updatedCart, wishlist: updatedWishlist };
+
+
+  setCart(updatedCart);
+  setWishlist(updatedWishlist);
+  setCurrentUser(updatedUser);
+
+
+  await updateUserInDB(updatedUser);
+
+  toast.success("Moved to Cart");
+};
+
 
   const removeFromWishlist = async (id) => {
     const updatedWishlist = wishlist.filter((i) => i.id !== id);
@@ -290,38 +327,38 @@ export const AppContextt = ({ children }) => {
     setCurrentUser(updatedUser);
     await updateUserInDB(updatedUser);
   };
-const placeOrder = async ({ items, method, details, isBuyNow = false }) => {
-  const newOrder = {
-    id: Date.now(),
-    items,
-    status: "Ordered",
-    paymentMethod: method,
-    paymentDetails: details,
-    createdAt: new Date().toISOString(),
+
+  const placeOrder = async ({ items, method, details, isBuyNow = false }) => {
+    const newOrder = {
+      id: Date.now(),
+      items,
+      status: "Ordered",
+      paymentMethod: method,
+      paymentDetails: details,
+      createdAt: new Date().toISOString(),
+    };
+
+    const updatedOrders = [...orders, newOrder];
+
+    let updatedCart = cart;
+
+    if (isBuyNow) {
+      const buyNowIds = items.map((item) => item.id + "-" + (item.size || ""));
+      updatedCart = cart.filter(
+        (cartItem) =>
+          !buyNowIds.includes(cartItem.id + "-" + (cartItem.size || ""))
+      );
+    } else {
+      updatedCart = [];
+    }
+
+    setOrders(updatedOrders);
+    setCart(updatedCart);
+
+    const updatedUser = { ...currentUser, orders: updatedOrders, cart: updatedCart };
+    setCurrentUser(updatedUser);
+    await updateUserInDB(updatedUser);
   };
-
-  const updatedOrders = [...orders, newOrder];
-
-
-  let updatedCart = cart;
-
-  if (isBuyNow) {
-    const buyNowIds = items.map((item) => item.id + "-" + (item.size || ""));
-    updatedCart = cart.filter(
-      (cartItem) => !buyNowIds.includes(cartItem.id + "-" + (cartItem.size || ""))
-    );
-  } else {
-  
-    updatedCart = [];
-  }
-
-  setOrders(updatedOrders);
-  setCart(updatedCart);
-
-  const updatedUser = { ...currentUser, orders: updatedOrders, cart: updatedCart };
-  setCurrentUser(updatedUser);
-  await updateUserInDB(updatedUser);
-};
 
   const cancelOrder = async (orderId) => {
     const updatedOrders = orders.map((o) =>
