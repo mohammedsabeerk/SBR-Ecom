@@ -8,7 +8,7 @@ import Product from "../../pages/admin/ProductAd";
 import UserAd from "../../pages/admin/UserAd";
 
 import Sidebar from "./Sidebar";
-import Navbar from "./NavBar";
+import Navbar from "./Navbar";
 import { useAppContext } from "../../context/AppContext";
 import AdminRoute from "../../routes/AdminRoutes";
 
