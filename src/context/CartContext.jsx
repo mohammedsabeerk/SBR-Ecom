@@ -25,7 +25,7 @@ export const CartProvider = ({ children }) => {
   const navigate = useNavigate();
 
   const fetchCart = useCallback(async () => {
-    // Only fetch cart for regular users, not admins
+   
     if (!currentUser || currentUser.role !== "user") { setCart([]); return; }
     try {
       const data = await getCart();
@@ -59,7 +59,7 @@ export const CartProvider = ({ children }) => {
     } catch {
       return false;
     }
-  }, [currentUser, navigate]);
+  }, [authLoading, currentUser, navigate]);
 
   const removeFromCart = useCallback(async (productId, size) => {
     try {

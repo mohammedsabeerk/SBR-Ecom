@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { FaHeart } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 import { useAppContext } from "../../context/AppContext";
-import { toast } from "react-toastify";
 import { getImageUrl } from "../../utils/imageUtils";
 
 function ProductsSection() {
@@ -22,23 +21,13 @@ function ProductsSection() {
 
   const [selectedCategory, setSelectedCategory] = useState("All");
 
-  // const categories = ["All", ...new Set(products.map((item) => item.category))];
+
   const safeProducts = Array.isArray(products) ? products : [];
   const categories = [
     "All",
     ...new Set(safeProducts.map((item) => item.category)),
   ];
-  //   const categories = [
-  //   "All",
-  //   ...new Set((products || []).map((item) => item.category))
-  // ];
-
-  // const filteredProducts =
-  //   selectedCategory === "All"
-  // ? products
-  //     : products.filter((item) => item.category === selectedCategory);
-
-  // const safeProducts = Array.isArray(products) ? products : [];
+ 
 
   const filteredProducts =
     selectedCategory === "All"
@@ -55,7 +44,6 @@ function ProductsSection() {
       return;
     }
 
-    // addToWishlist from context already handles auth check, toast, and redirect
     await addToWishlist(item);
   };
 

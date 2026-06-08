@@ -8,16 +8,44 @@ function Login() {
   const navigate = useNavigate();
 
   const [form, setForm] = useState({ email: "", password: "" });
+  const [errors, setErrors] = useState({});
   const [loading, setLoading] = useState(false);
 
-  const handleChange = (e) =>
-    setForm({ ...form, [e.target.name]: e.target.value });
+
+  const validateEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
+   
+    if (errors[name]) {
+      setErrors({ ...errors, [name]: "" });
+    }
+  };
 
   const handleLogin = async (e) => {
     e.preventDefault();
+    const newErrors = {};
 
-    if (!form.email || !form.password) {
-      toast.error("Please enter email & password");
+  
+    if (!form.email || !form.email.trim()) {
+      newErrors.email = "Email is required";
+    } else if (!validateEmail(form.email)) {
+      newErrors.email = "Please enter a valid email";
+    }
+
+   
+    if (!form.password) {
+      newErrors.password = "Password is required";
+    }
+
+    
+    if (Object.keys(newErrors).length > 0) {
+      setErrors(newErrors);
+      toast.error("Please check your credentials");
       return;
     }
 
@@ -28,12 +56,13 @@ function Login() {
 
  
       if (role === "blocked") {
-        toast.error("you are blocked")
+        toast.error("Your account has been blocked")
       
         return;
       }
 
       if (!role) {
+        setErrors({ login: "Invalid email or password" });
         toast.error("Invalid email or password");
         return;
       }
@@ -46,8 +75,10 @@ function Login() {
       } else {
         navigate("/");
       }
-    } catch {
-      toast.error("Server error");
+    } catch (error) {
+      const errorMessage = error.response?.data?.message || "Server error";
+      setErrors({ login: errorMessage });
+      toast.error(errorMessage);
     } finally {
       setLoading(false);
     }
@@ -61,32 +92,60 @@ function Login() {
           "url('https://images.unsplash.com/photo-1521335629791-ce4aec67dd53')",
       }}
     >
-      <div className="bg-white/30 backdrop-blur-lg p-8 rounded-xl w-80 shadow-lg">
+      <div className="bg-white/30 backdrop-blur-lg p-8 rounded-xl w-96 shadow-lg">
         <h2 className="text-2xl font-bold text-center mb-6">Login</h2>
 
-        <form onSubmit={handleLogin} className="space-y-4">
-          <input
-            name="email"
-            type="email"
-            value={form.email}
-            placeholder="Email"
-            onChange={handleChange}
-            className="w-full p-2 rounded border"
-          />
+        {errors.login && (
+          <div className="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-4">
+            ⚠ {errors.login}
+          </div>
+        )}
 
-          <input
-            name="password"
-            type="password"
-            value={form.password}
-            placeholder="Password"
-            onChange={handleChange}
-            className="w-full p-2 rounded border"
-          />
+        <form onSubmit={handleLogin} className="space-y-4">
+        
+          <div>
+            <input
+              name="email"
+              type="email"
+              value={form.email}
+              placeholder="Email"
+              onChange={handleChange}
+              className={`w-full p-2 rounded border focus:outline-none focus:ring-2 transition ${
+                errors.email
+                  ? "border-red-500 bg-red-50 focus:ring-red-400"
+                  : "border-gray-300 focus:ring-blue-400"
+              }`}
+            />
+            {errors.email && (
+              <p className="text-red-600 text-xs mt-1">⚠ {errors.email}</p>
+            )}
+          </div>
+
+    
+          <div>
+            <input
+              name="password"
+              type="password"
+              value={form.password}
+              placeholder="Password"
+              onChange={handleChange}
+              className={`w-full p-2 rounded border focus:outline-none focus:ring-2 transition ${
+                errors.password
+                  ? "border-red-500 bg-red-50 focus:ring-red-400"
+                  : "border-gray-300 focus:ring-blue-400"
+              }`}
+            />
+            {errors.password && (
+              <p className="text-red-600 text-xs mt-1">⚠ {errors.password}</p>
+            )}
+          </div>
 
           <button
             type="submit"
             disabled={loading}
-            className="w-full py-2 rounded text-white bg-black"
+            className={`w-full py-2 rounded text-white font-semibold transition ${
+              loading ? "bg-gray-400 cursor-not-allowed" : "bg-black hover:bg-gray-800"
+            }`}
           >
             {loading ? "Logging in..." : "Login"}
           </button>
@@ -94,8 +153,8 @@ function Login() {
 
         <p className="text-center mt-4 text-sm">
           Don&apos;t have an account?
-          <Link to="/register" className="text-blue-600 ml-1">
-            Register
+          <Link to="/register" className="text-blue-600 ml-1 font-semibold hover:underline">
+            Register here
           </Link>
         </p>
       </div>
